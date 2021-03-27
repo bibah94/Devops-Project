@@ -37,8 +37,8 @@ pipeline {
           transfers: [sshTransfer(
             execCommand: 'ansible-playbook -i /opt/docker/hosts /opt/docker/devops-docker-image.yml', 
             remoteDirectory: '//opt//docker', 
-            removePrefix: 'target', 
-            sourceFiles: 'target/*.war')], 
+            removePrefix: 'webapp/target', 
+            sourceFiles: 'webapp/target/*.war')], 
             verbose: false
         )])
       }
