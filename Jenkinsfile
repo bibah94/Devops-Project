@@ -10,7 +10,7 @@ pipeline {
 
     stage('Cloning Project') {
       steps {
-        git(url: 'https://github.com/bibah94/BiB-Devops.git', branch: 'master')
+        git(url: 'https://github.com/bibah94/Devops-Project.git', branch: 'master')
       }
     }
 
